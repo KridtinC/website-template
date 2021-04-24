@@ -10,13 +10,13 @@ function Footer() {
                     <h4>Navigation</h4>
                     <ul>
                         <li className="list-unstyled">
-                            <a href="#" className="App-link">Home</a>
+                            <a href="/" className="App-link">Home</a>
                         </li>
                         <li className="list-unstyled">
-                            <a href="#" className="App-link">Works</a>
+                            <a href="works" className="App-link">Works</a>
                         </li>
                         <li className="list-unstyled">
-                            <a href="#" className="App-link">About</a>
+                            <a href="/about" className="App-link">About</a>
                         </li>
                     </ul>
                 </div>
@@ -34,7 +34,7 @@ function Footer() {
             </div>
             <div className="py-3" style={{textAlign: "center"}}>
                 <p>© 2021 Copyright:
-                <a href="#" className="App-link" > MKT Portfolio</a>
+                <a href="/" className="App-link" > MKT Portfolio</a>
                 </p>
             </div>
         </div>
