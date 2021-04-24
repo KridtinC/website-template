@@ -1,15 +1,22 @@
+const menuStyle = {
+    margin: "30px",
+}
+
 function NavBar() {
     return (
         <nav className="navbar navbar-dark bg-dark">
             <a className="navbar-brand" href="#" style={{margin: "30px"}}>
-                Website Template
+                MKT Portfolio
             </a>
             <div className="d-flex">
-                <a className="navbar-brand" href="#">
-                    Test1
+                <a className="navbar-brand" href="#" style={menuStyle}>
+                    Home
                 </a>
-                <a className="navbar-brand" href="#">
-                    Test2
+                <a className="navbar-brand" href="#"  style={menuStyle}>
+                    Works
+                </a>
+                <a className="navbar-brand" href="#"  style={menuStyle}>
+                    About
                 </a>
             </div>
         </nav>
