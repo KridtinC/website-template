@@ -1,12 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useEffect } from 'react';
 import './App.css';
 import Header from './Header';
 import Body from './Body';
 import Footer from './components/Footer';
-
+import AOS from 'aos';
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+        // duration : 5000
+    });
+}, []);
   return (
     <div className="App">
       <div className="App-header">

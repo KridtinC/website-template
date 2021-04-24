@@ -4,7 +4,7 @@ const menuStyle = {
 
 function NavBar() {
     return (
-        <nav className="navbar navbar-dark bg-dark">
+        <nav className="navbar navbar-dark bg-dark" data-aos="fade-down">
             <a className="navbar-brand" href="#" style={{margin: "30px"}}>
                 MKT Portfolio
             </a>

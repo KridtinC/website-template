@@ -1,45 +1,47 @@
+import { useEffect } from 'react';
 import samplepic from '../../assets/sample.jpg'
+import AOS from "aos";
 
-interface Options {
+export interface Options {
     data: string
     isRTL: boolean
 }
 
 const featuredContainerStyle = {
-    display: 'flex', 
+    display: 'flex',
     width: "100%",
-    height: "300px",
+    height: "700px",
     borderStyle: "solid",
-    alignItems: "center", 
+    alignItems: "center",
 };
 
 const featuredContainerRTLStyle = {
-    display: 'flex', 
-    justifyContent:'flex-end',
+    display: 'flex',
+    justifyContent: 'flex-end',
     width: "100%",
-    height: "300px",
+    height: "700px",
     borderStyle: "solid",
-    alignItems: "center", 
+    alignItems: "center",
 };
 
 const featuredPicStyle = {
     width: "auto",
-    height: "100%",
+    height: "50%",
     padding: "10px",
 };
 
 function FeaturedItem(props: Options) {
     if (props.isRTL) {
         return (
-            <div style={featuredContainerRTLStyle}>
+            <div style={featuredContainerRTLStyle} data-aos="fade-left">
                 {props.data}
-                <img src={samplepic} alt=""style={featuredPicStyle}/>
+                <img src={samplepic} alt="" style={featuredPicStyle} />
             </div>
         )
     }
     return (
-        <div style={featuredContainerStyle}>
-            <img src={samplepic} alt=""style={featuredPicStyle}/>
+        <div style={featuredContainerStyle} data-aos="fade-right">
+            <img src={samplepic} alt="" style={featuredPicStyle} />
             <p>{props.data}</p>
         </div>
     )

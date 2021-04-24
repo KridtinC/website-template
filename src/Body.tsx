@@ -7,7 +7,7 @@ const BodyStyle = {
 function Body() {
     return (
         <div style={BodyStyle}>
-            <h1 style={{margin: "50px"}}>Featured</h1>
+            <h1 style={{margin: "50px"}} data-aos="fade-right">Featured</h1>
             <FeaturedItem data={"test"} isRTL={false}></FeaturedItem>
             <FeaturedItem data={"test"} isRTL={true}></FeaturedItem>
             <FeaturedItem data={"test"} isRTL={false}></FeaturedItem>

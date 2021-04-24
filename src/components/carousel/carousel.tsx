@@ -3,12 +3,6 @@ import cc1pic from '../../assets/cc1.jpg'
 import cc2pic from '../../assets/cc2.jpg'
 import cc3pic from '../../assets/cc3.jpg'
 
-const verticalCenter = {
-  margin: '100',
-  position: 'absolute',
-  top: '50 %',
-};
-
 function AnimatedCarousel() {
   return (
     // <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
@@ -75,7 +69,7 @@ function AnimatedCarousel() {
     //   </Carousel.Item>
     // </Carousel>
 
-    <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel"  data-aos="fade-down">
       <div className="carousel-inner vertical-center">
         <div className="carousel-item active">
           <img src={cc1pic} className="d-block w-100" />
