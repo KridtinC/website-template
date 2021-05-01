@@ -24,10 +24,10 @@ function Footer() {
                     <h4>Social Link</h4>
                     <ul>
                         <li className="list-unstyled">
-                            <a href="https://github.com/KridtinC" target="_blank" className="App-link">GitHub</a>
+                            <a href="https://github.com/KridtinC" target="_blank" rel="noopener noreferrer" className="App-link">GitHub</a>
                         </li>
                         <li className="list-unstyled">
-                            <a href="https://www.linkedin.com/in/kridtinc/" target="_blank" className="App-link">LinkedIn</a>
+                            <a href="https://www.linkedin.com/in/kridtinc/" target="_blank" rel="noopener noreferrer" className="App-link">LinkedIn</a>
                         </li>
                     </ul>
                 </div>

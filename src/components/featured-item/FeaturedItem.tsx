@@ -1,48 +1,26 @@
-import { useEffect } from 'react';
-import samplepic from '../../assets/sample.jpg'
-import AOS from "aos";
+import { MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCardText, MDBCardTitle, MDBCol } from 'mdbreact';
+import { Repo } from '../../model/Repo';
 
 export interface Options {
-    data: string
-    isRTL: boolean
+    repo: Repo
 }
 
-const featuredContainerStyle = {
-    display: 'flex',
-    width: "100%",
-    height: "700px",
-    borderStyle: "solid",
-    alignItems: "center",
-};
-
-const featuredContainerRTLStyle = {
-    display: 'flex',
-    justifyContent: 'flex-end',
-    width: "100%",
-    height: "700px",
-    borderStyle: "solid",
-    alignItems: "center",
-};
-
-const featuredPicStyle = {
-    width: "auto",
-    height: "50%",
-    padding: "10px",
-};
-
 function FeaturedItem(props: Options) {
-    if (props.isRTL) {
-        return (
-            <div style={featuredContainerRTLStyle} data-aos="fade-left">
-                {props.data}
-                <img src={samplepic} alt="" style={featuredPicStyle} />
-            </div>
-        )
-    }
     return (
-        <div style={featuredContainerStyle} data-aos="fade-right">
-            <img src={samplepic} alt="" style={featuredPicStyle} />
-            <p>{props.data}</p>
+        <div data-aos="fade-up" style={{"marginTop": "10px", "marginBottom": "10px"}}>
+            <MDBCol>
+                <MDBCard style={{ width: "22rem" }}>
+                    <MDBCardImage className="img-fluid" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" waves />
+                    <MDBCardBody>
+                        <MDBCardTitle><p style={{ "color": "black" }}>{props.repo.name}</p> </MDBCardTitle>
+                        <MDBCardText>
+                            {props.repo.desc}
+                        </MDBCardText>
+                        <MDBBtn href={props.repo.url} target="_blank" rel="noopener noreferrer" color="indigo">GITHUB URL</MDBBtn>
+                        <MDBBtn href="" color="elegant">VISIT DEMO</MDBBtn>
+                    </MDBCardBody>
+                </MDBCard>
+            </MDBCol>
         </div>
     )
 }
