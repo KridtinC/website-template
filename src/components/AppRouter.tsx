@@ -7,12 +7,16 @@ const menuStyle = {
     margin: "30px",
 }
 
+const bodyPadding = {
+    paddingTop: "115px"
+}
+
 
 function AppRouter() {
     return (
         <BrowserRouter>
             <div>
-                <nav className="navbar navbar-dark bg-dark" data-aos="fade-down">
+                <nav className="navbar navbar-dark bg-dark fixed-top" data-aos="fade-down">
                     <a className="navbar-brand" href="/" style={{ margin: "30px" }}>
                         MKT Portfolio
             </a>
@@ -30,13 +34,20 @@ function AppRouter() {
                 </nav>
                 <Switch>
                     <Route exact path="/">
-                        <Home />
+                        <div style={bodyPadding}>
+                            <Home />
+                        </div>
+
                     </Route>
                     <Route path="/works">
-                        <Works />
+                        <div style={bodyPadding}>
+                            <Works />
+                        </div>
                     </Route>
                     <Route path="/about">
-                        <About />
+                        <div style={bodyPadding}>
+                            <About />
+                        </div>
                     </Route>
                 </Switch>
             </div>
