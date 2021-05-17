@@ -16,20 +16,25 @@ function AppRouter() {
     return (
         <BrowserRouter>
             <div>
-                <nav className="navbar navbar-dark bg-dark fixed-top" data-aos="fade-down">
+                <nav className="navbar navbar-dark bg-dark fixed-top navbar-expand-sm" data-aos="fade-down">
                     <a className="navbar-brand" href="/" style={{ margin: "30px" }}>
                         MKT Portfolio
             </a>
-                    <div className="d-flex">
-                        <Link className="navbar-brand" to="/" style={menuStyle}>
-                            Home
-                </Link>
-                        <Link className="navbar-brand" to="/works" style={menuStyle}>
-                            Works
-                </Link>
-                        <Link className="navbar-brand" to="/about" style={menuStyle}>
-                            About
-                </Link>
+                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
+                    <div className="collapse navbar-collapse">
+                        <ul className="nav navbar-nav ml-auto">
+                            <li className="nav-item active">
+                                <Link className="navbar-brand" to="/" style={menuStyle}>Home</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="navbar-brand" to="/works" style={menuStyle}>Works</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="navbar-brand" to="/about" style={menuStyle}>About</Link>
+                            </li>
+                        </ul>
                     </div>
                 </nav>
                 <Switch>
