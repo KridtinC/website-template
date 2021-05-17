@@ -16,12 +16,9 @@ import androidLogo from "../../assets/frameworks/android.png"
 import robotLogo from "../../assets/frameworks/robot.png"
 import awsLogo from "../../assets/clouds/aws.png"
 import gCloudLogo from "../../assets/clouds/gcloud.png"
+import { StacksLogoStyle } from "./About"
 
-const stacksLogoStyle = {
-    height: "120px",
-    width: "120px",
-    padding: "10px",
-}
+
 
 const stacksContainerStyle = {
     margin: "10px",
@@ -36,39 +33,39 @@ export default function TechStacks() {
             <div style={stacksContainerStyle}>
                 <p>Databases</p>
                 <div style={{ display: "flex", "flexFlow": "row wrap" }}>
-                    <img src={mySQLLogo} alt="" style={stacksLogoStyle} />
-                    <img src={oracleLogo} alt="" style={stacksLogoStyle} />
-                    <img src={ydbLogo} alt="" style={stacksLogoStyle} />
+                    <img src={mySQLLogo} alt="" style={StacksLogoStyle} />
+                    <img src={oracleLogo} alt="" style={StacksLogoStyle} />
+                    <img src={ydbLogo} alt="" style={StacksLogoStyle} />
                 </div>
             </div>
             <div style={stacksContainerStyle}>
                 <p>Languages</p>
                 <div style={{ display: "flex", "flexFlow": "row wrap" }}>
-                    <img src={javaLogo} alt="" style={stacksLogoStyle} />
-                    <img src={pythonLogo} alt="" style={stacksLogoStyle} />
-                    <img src={tsLogo} alt="" style={stacksLogoStyle} />
-                    <img src={htmlLogo} alt="" style={stacksLogoStyle} />
-                    <img src={kotlinLogo} alt="" style={stacksLogoStyle} />
-                    <img src={goLogo} alt="" style={stacksLogoStyle} />
-                    <img src={csharpLogo} alt="" style={stacksLogoStyle} />
-                    <img src={sqlLogo} alt="" style={stacksLogoStyle} />
+                    <img src={javaLogo} alt="" style={StacksLogoStyle} />
+                    <img src={pythonLogo} alt="" style={StacksLogoStyle} />
+                    <img src={tsLogo} alt="" style={StacksLogoStyle} />
+                    <img src={htmlLogo} alt="" style={StacksLogoStyle} />
+                    <img src={kotlinLogo} alt="" style={StacksLogoStyle} />
+                    <img src={goLogo} alt="" style={StacksLogoStyle} />
+                    <img src={csharpLogo} alt="" style={StacksLogoStyle} />
+                    <img src={sqlLogo} alt="" style={StacksLogoStyle} />
                 </div>
             </div>
             <div style={stacksContainerStyle}>
                 <p>Frameworks</p>
                 <div style={{ display: "flex", "flexFlow": "row wrap" }}>
-                    <img src={reactLogo} alt="" style={stacksLogoStyle} />
-                    <img src={angularLogo} alt="" style={stacksLogoStyle} />
-                    <img src={nodejsLogo} alt="" style={stacksLogoStyle} />
-                    <img src={androidLogo} alt="" style={stacksLogoStyle} />
-                    <img src={robotLogo} alt="" style={stacksLogoStyle} />
+                    <img src={reactLogo} alt="" style={StacksLogoStyle} />
+                    <img src={angularLogo} alt="" style={StacksLogoStyle} />
+                    <img src={nodejsLogo} alt="" style={StacksLogoStyle} />
+                    <img src={androidLogo} alt="" style={StacksLogoStyle} />
+                    <img src={robotLogo} alt="" style={StacksLogoStyle} />
                 </div>
             </div>
             <div style={stacksContainerStyle}>
                 <p>Clouds</p>
                 <div style={{ display: "flex", "flexFlow": "row wrap" }}>
-                    <img src={awsLogo} alt="" style={stacksLogoStyle} />
-                    <img src={gCloudLogo} alt="" style={stacksLogoStyle} />
+                    <img src={awsLogo} alt="" style={StacksLogoStyle} />
+                    <img src={gCloudLogo} alt="" style={StacksLogoStyle} />
                 </div>
             </div>
 

@@ -3,6 +3,7 @@ import { GetUserInfo } from "../../apis/users/GetUserInfo";
 import { UserInfo } from "../../model/User"
 import TechStacks from "./TechStacks";
 import Education from "./Educations";
+import Experiences from "./Experiences";
 
 const aboutBody = {
     margin: "50px",
@@ -13,6 +14,18 @@ const imgStyle = {
     margin: "0 auto",
     height: "100%",
     width: "auto",
+}
+
+export const StacksLogoStyle = {
+    height: "120px",
+    width: "120px",
+    padding: "10px",
+}
+
+export const ExperiencesLogoStyle = {
+    height: "auto",
+    width: "50%",
+    padding: "5px",
 }
 
 function About() {
@@ -57,8 +70,10 @@ function About() {
 
             </div>
 
-            <h1 style={{ margin: "50px" }} data-aos="fade-right">Education</h1>
+            <h1 style={{ margin: "50px" }} data-aos="fade-left">Education</h1>
             {Education()}
+            <h1 style={{ margin: "50px" }} data-aos="fade-right">Experiences</h1>
+            {Experiences()}
             <h1 style={{ margin: "50px" }} data-aos="fade-left">Technical Stacks</h1>
             {TechStacks()}
 
